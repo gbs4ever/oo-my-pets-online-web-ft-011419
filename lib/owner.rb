@@ -60,8 +60,11 @@ class Owner
 
 
         def list_pets
-          cat =@pets[:cats].length
-return"I have #{}fish, #{},and  #{cat}."
+      
+
+
+          
+return"I have #{fish}fish, #{dog}dogs,and  #{@pets[:cats].length}cat(s)."
         end
 
 
