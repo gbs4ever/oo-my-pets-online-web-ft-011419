@@ -50,7 +50,7 @@ class Owner
 
     def sell_pets
       @pets.each  do  |k,v|
-         v.each do |pets|
+         v.reject do |pets|
            if pets.mood == "nervous"
 
 
