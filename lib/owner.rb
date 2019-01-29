@@ -2,24 +2,24 @@ require 'pry'
 class Owner
   attr_accessor   :name, :mood, :pets
   attr_reader :species ,   :name
-  @@all= []
+  OWNERS= []
     def initialize(species)
       @species = species
 
-      @@all<<@pets= {:fishes=>[] ,:cats=>[], :dogs=>[]}
+    OWNERS<<@pets= {:fishes=>[] ,:cats=>[], :dogs=>[]}
 
     end
 #class methods only
   def self.count
-    @@all.length
+    OWNERS.length
   end
 
   def self.all
-    @@all
+    OWNERS
   end
 
   def self.reset_all
-    @@all.clear
+OWNERS.clear
   end
 
   #Instacne methods only
