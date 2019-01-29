@@ -53,7 +53,7 @@ class Owner
       @pets.each  do  |k,v|
         #binding.pry
           v.reject! do |pets|
-            pets.mood == "nervous"
+            pets.mood = "nervous"
           end
           v.clear
       end
