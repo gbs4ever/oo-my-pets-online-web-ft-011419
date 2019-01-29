@@ -1,11 +1,13 @@
+require 'pry'
 class Owner
-  attr_accessor   :name
+  attr_accessor   :name, :mood
   attr_reader :species , :pets,  :name
   @@all= []
     def initialize(species)
       @species = species
-      @pets= {:fishes=>[] ,:cats=>[], :dogs=>[]}
-      @@all << species
+
+      @@all<<@pets= {:fishes=>[] ,:cats=>[], :dogs=>[]}
+
     end
 #class methods only
   def self.count
@@ -24,10 +26,20 @@ class Owner
   def say_species
     return "I am a human."
   end
+  def buy_fish(name)
+    @pets[:fishes] << Fish.new(name)
+  end
+  def buy_cat(name)
+    @pets[:cats] <<Cat.new(name)
+  end
 
-  def buy_fish(fish)
+  def buy_dog(name)
+    @pets[:dogs] << Dog.new(name)
+  end
 
-@pets[:fishes] << fish
+  def walk_dogs
+@pets[:dogs][0].mood = "happy"
+
 
   end
 
