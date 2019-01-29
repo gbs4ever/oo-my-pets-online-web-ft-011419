@@ -48,12 +48,16 @@ class Owner
       @pets[:fishes][0].mood = "happy"
     end
 
-        def sell_pets
-@pets.each  do  |k,v|
-  if v.mood = "nervous"
-    v.clear
-    @pets
+    def sell_pets
+      @pets.each  do  |k,v|
+        if v.mood = "nervous"
+          v.clear
+          @pets
         end
+      end
+    end
+
+
 
         def list_pets
 Return"I have #{}fish, #{},and  #{}."
