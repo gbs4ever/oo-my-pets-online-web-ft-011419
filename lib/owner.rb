@@ -53,9 +53,9 @@ class Owner
          v.each do |pets|
 pets
 
-         
+
           binding.pry
-      
+
 
         end
 
