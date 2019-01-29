@@ -51,7 +51,7 @@ class Owner
 
     def sell_pets
       @pets.each  do  |k,v|
-        binding.pry
+        #binding.pry
           v.reject! do |pets|
             pets.mood == "nervous"
           end
@@ -62,7 +62,7 @@ class Owner
 
 
         def list_pets
-          "I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
+          "I have #{@pets[:fishes].length}k fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
         end
 
 
