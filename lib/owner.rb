@@ -54,7 +54,7 @@ class Owner
           v.clear
 
         end
-    
+
       end
       @pets
     end
