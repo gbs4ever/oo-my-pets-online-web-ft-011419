@@ -51,6 +51,7 @@ class Owner
     def sell_pets
       @pets.each  do  |k,v|
         if v[0].mood == "nervous"
+          binding.pry
           v.clear
 
         end
