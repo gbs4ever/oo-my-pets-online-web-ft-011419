@@ -55,7 +55,7 @@ class Owner
           v.reject! do |pets|
             pets.mood == "nervous"
           end
-          @pets
+          v.clear
       end
     end
 
