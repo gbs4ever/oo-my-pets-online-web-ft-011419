@@ -53,6 +53,7 @@ class Owner
           v.reject do |pets|
             pets.mood == "nervous"
           end
+          @pets
       end
     end
 
