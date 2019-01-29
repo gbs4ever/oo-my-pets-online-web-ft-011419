@@ -64,7 +64,7 @@ class Owner
 
 
 
-return"I have #{fish}fish, #{dog}dogs,and  #{@pets[:cats].length}cat(s)."
+return"I have #{@pets[:fish].length}fish, #{@pets[:dog].length}dogs,and  #{@pets[:cats].length}cat(s)."
         end
 
 
