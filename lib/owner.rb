@@ -50,12 +50,13 @@ class Owner
 
     def sell_pets
       @pets.each  do  |k,v|
-        if v.mood = "nervous"
+        if v.mood == "nervous"
           v.clear
 
         end
-      @pets
+    
       end
+      @pets
     end
 
 
