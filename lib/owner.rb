@@ -49,11 +49,14 @@ class Owner
     end
 
         def sell_pets
-
+@pets.each  do  |k,v|
+  if v.mood = "nervous"
+    v.clear
+    @pets
         end
 
         def list_pets
-
+Return"I have #{}fish, #{},and  #{}."
         end
 
 
