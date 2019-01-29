@@ -52,7 +52,7 @@ class Owner
       @pets.each  do  |k,v|
         if v.mood = "nervous"
           v.clear
-          
+
         end
       @pets
       end
